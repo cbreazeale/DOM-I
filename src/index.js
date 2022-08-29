@@ -1,3 +1,4 @@
+
 const siteContent = { // DO NOT CHANGE THIS OBJECT
   "nav": {
     "nav-item-1": "Services",
@@ -40,3 +41,40 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+const navBar = document.getElementsByClassName('container')
+const cta = document.getElementsByClassName('cta')
+const main = document.getElementsByClassName('main-content')
+const contact = document.getElementsByClassName('contact')
+// contact.appendChild(document.createElement('h4'))
+
+// const h4 = contact.appendChild(document.createElement('h4'))
+// h4.textContent = 'Contact'
+
+
+
+const aTags = document.querySelectorAll('a')
+aTags[0].textContent = "Services"
+aTags[1].textContent = "Product"
+aTags[2].textContent = "Vision"
+aTags[3].textContent = "Features"
+aTags[4].textContent = "About"
+aTags[5].textContent = "Contact"
+
+
+
+aTags.forEach(el => {
+  el.className = 'italic'
+})
+
+aTags[6].className = 'bold'
+aTags[6].textContent = "Copyright Great Idea! 2021"
+
+
+const logo = document.getElementById('logo-img');
+logo.src = "http://localhost:9000/img/logo.png"
+
+const ctaImg = document.getElementById('cta-img');
+ctaImg.src="http://localhost:9000/img/cta.png"
+
+const midImg = document.getElementById('middle-img')
+midImg.src = "http://localhost:9000/img/accent.png"
